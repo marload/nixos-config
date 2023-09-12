@@ -2,7 +2,7 @@
 
 ```bash
 xcode-select --install
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+sh <(curl -L https://nixos.org/nix/install)
 ```
 
 ```bash
