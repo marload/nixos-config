@@ -13,7 +13,9 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
-        [ pkgs.vim
+        [
+          pkgs.vim
+          pkgs.eza
         ];
 
       # Auto upgrade nix package and the daemon service.
@@ -41,7 +43,7 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#simple
-    darwinConfigurations."simple" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."Marloads-Mac" = nix-darwin.lib.darwinSystem {
       modules = [ configuration ];
     };
 

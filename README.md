@@ -6,6 +6,6 @@ sh <(curl -L https://nixos.org/nix/install)
 ```
 
 ```bash
-nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-nix-channel --update
+nix --extra-experimental-features "nix-command flakes" run nix-darwin -- switch --flake ~/.config/nixos-config
+darwin-rebuild switch --flake ~/.config/nixos-config
 ```
