@@ -12,6 +12,7 @@ with pkgs; [
   fzf
   direnv
   starship
+  karabiner-elements
 
   # Cloud-related tools and SDKs
   docker-compose

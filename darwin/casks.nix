@@ -10,10 +10,13 @@
   "visual-studio-code"
   "warp"
   
-  # Productivity Tools
+  # Communication Tools
   "obsidian"
   "slack"
   "notion"
+
+  # Productivity Tools
+  "rectangle"
 
   # Web browser
   "arc"
