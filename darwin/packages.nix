@@ -25,6 +25,7 @@ with pkgs; [
   terraform
   tflint
   k9s
+  saml2aws
 
   # Source code management, Git, GitHub tools
   gh
@@ -44,6 +45,7 @@ with pkgs; [
   python312
   python39Packages.virtualenv
 
+  # Nodejs packages
   nodejs
   nodePackages.live-server
   nodePackages.nodemon
