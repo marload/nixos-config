@@ -19,7 +19,6 @@ with pkgs; [
   #
 
   # Cloud-related tools and SDKs
-  docker
   docker-compose
   awscli2
   terraform
