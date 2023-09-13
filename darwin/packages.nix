@@ -11,13 +11,7 @@ with pkgs; [
   zip
   fzf
   direnv
-  
-  # Productivity Tools
-  rectangle
-
-
-  # Security Tools
-  #
+  starship
 
   # Cloud-related tools and SDKs
   docker-compose
@@ -26,6 +20,10 @@ with pkgs; [
   tflint
   k9s
   saml2aws
+  kubectl
+  kubectx
+  azure-cli
+  google-cloud-sdk
 
   # Source code management, Git, GitHub tools
   gh

@@ -38,6 +38,9 @@ in
   programs = {
     zsh = {
       enable = true;
+      ogMyZsh = {
+        enable = true;
+      };
     };
   };
 
@@ -46,7 +49,6 @@ in
 
   system = {
     stateVersion = 4;
-
 
     defaults = {
       dock = {
