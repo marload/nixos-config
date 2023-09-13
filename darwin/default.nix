@@ -1,36 +1,36 @@
-{ nixpkgs, ... }:
+{ nixpkgs, pkgs, ... }:
 
 let
   user = "marload";
 in
 {
   environment = {
-    systemPackages = [
-      pkgs.eza
-    ]
-  }
+    systemPackages = with pkgs; [
+      eza
+    ];
+  };
 
   services = {
     nix-daemon = {
-      enable = true
-    }
-  }
+      enable = true;
+    };
+  };
   
   nix = {
     settings = {
       experimental-features = "nix-command flakes";
-    }
-  }
+    };
+  };
 
   programs = {
     zsh = {
-      enable = true
-    }
-  }
+      enable = true;
+    };
+  };
 
   system = {
     stateVersion = 4;
-  }
+  };
 
   nixpkgs.hostPlatform = "aarch64-darwin";
 }
