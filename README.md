@@ -9,7 +9,7 @@ xcode-select --install
 ### Cloning nixos-config repository
 
 ```bash
-git clone https://github.com/marload ~/.config/nixos-config
+git clone https://github.com/marload/nixos-config ~/.config/nixos-config
 ```
 
 ### Install Nix
