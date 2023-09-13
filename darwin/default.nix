@@ -4,6 +4,10 @@ let
   user = "marload";
 in
 {
+  imports = [
+    ./home-manager.nix
+  ];
+
   environment = {
     systemPackages = import ./packages.nix { inherit pkgs; };
   };
