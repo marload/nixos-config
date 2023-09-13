@@ -36,5 +36,10 @@ sudo mkdir -p /opt/homebrew/Library/Taps/homebrew/ && sudo /bin/chmod +a "$USER 
 
 ```bash
 nix --extra-experimental-features "nix-command flakes" run nix-darwin -- switch --flake ~/.config/nixos-config --impure
+```
+
+### Rebuild
+
+```bash
 darwin-rebuild switch --flake ~/.config/nixos-config --impure
 ```
