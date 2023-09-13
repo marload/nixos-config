@@ -16,5 +16,5 @@ in
   };
 
   homebrew.enable = true;
-  # homebrew.casks = pkgs.callPackage ./casks.nix {};
+  homebrew.casks = pkgs.callPackage ./casks.nix {};
 }
