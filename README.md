@@ -29,12 +29,12 @@ nix-channel --update
 
 ```bash
 sudo mkdir -p /opt/homebrew/Library/Taps/homebrew/ && sudo /bin/chmod +a "$USER allow list,add_file,search,delete,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown" /opt/homebrew/Library/Taps/homebrew/
-
 ```
 
 ### Build
 
 ```bash
+export NIXPKGS_ALLOW_UNFREE=1
 nix --extra-experimental-features "nix-command flakes" run nix-darwin -- switch --flake ~/.config/nixos-config --impure
 ```
 

@@ -13,6 +13,7 @@ with pkgs; [
   direnv
   starship
   karabiner-elements
+  _1password
 
   # Cloud-related tools and SDKs
   docker-compose
