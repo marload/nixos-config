@@ -10,6 +10,7 @@ with pkgs; [
   bash-completion
   zip
   fzf
+  direnv
   
   # Productivity Tools
   rectangle
