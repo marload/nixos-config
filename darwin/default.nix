@@ -38,9 +38,6 @@ in
   programs = {
     zsh = {
       enable = true;
-      ogMyZsh = {
-        enable = true;
-      };
     };
   };
 
