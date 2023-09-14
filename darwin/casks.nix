@@ -12,8 +12,6 @@
   
   # Communication Tools
   "obsidian"
-  "slack"
-  "notion"
 
   # Productivity Tools
   "rectangle"

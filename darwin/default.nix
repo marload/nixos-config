@@ -1,4 +1,4 @@
-{ nixpkgs, pkgs, ... }:
+{ config, pkgs, ... }:
 
 let
   user = "marload";
@@ -35,12 +35,6 @@ in
     '';
   };
 
-  programs = {
-    zsh = {
-      enable = true;
-    };
-  };
-
   # Turn off NIX_PATH warnings now that we're using flakes
   system.checks.verifyNixPath = false;
 
@@ -48,9 +42,16 @@ in
     stateVersion = 4;
 
     defaults = {
+      NSGlobalDomain = {
+        AppleShowAllExtensions = true;
+        ApplePressAndHoldEnabled = false;
+        AppleInterfaceStyle = "Dark";
+      };
+
       dock = {
         autohide = true;
         tilesize = 24;
+        orientation = "bottom";
       };
 
       trackpad = {
@@ -59,6 +60,4 @@ in
       };
     };
   };
-
-  nixpkgs.hostPlatform = "aarch64-darwin";
 }

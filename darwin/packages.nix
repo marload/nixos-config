@@ -16,6 +16,7 @@ with pkgs; [
   _1password
 
   # Cloud-related tools and SDKs
+  docker
   docker-compose
   awscli2
   terraform
@@ -40,6 +41,7 @@ with pkgs; [
   eza
   ripgrep
   neovim
+  zoxide
 
   # Python packages
   python312
