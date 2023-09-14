@@ -32,7 +32,6 @@ with pkgs; [
   kubernetes-helm
   istioctl
   tcpdump
-  vault
 
   # Source code management, Git, GitHub tools
   gh

@@ -29,6 +29,7 @@ in
       home.enableNixpkgsReleaseCheck = false;
       home.packages = pkgs.callPackage ./packages.nix {};
       programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
-    }
-  }
+      home.stateVersion = "21.11";
+    };
+  };
 }

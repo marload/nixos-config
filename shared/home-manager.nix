@@ -14,7 +14,7 @@ in
       tf = "terraform";
       k = "kubectl";
 			ls = "eza";
-    }
+    };
   };
 
   git = {
