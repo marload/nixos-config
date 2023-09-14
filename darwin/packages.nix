@@ -28,6 +28,7 @@ with pkgs; [
   kubectx
   azure-cli
   google-cloud-sdk
+  kubernetes-helm
 
   # Source code management, Git, GitHub tools
   gh
