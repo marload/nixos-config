@@ -27,7 +27,7 @@
   in
   {
     darwinConfigurations = let user = "marload"; in {
-      "Marloads-MM" = nix-darwin.lib.darwinSystem {
+      "Marloads-MBA" = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
           nix-homebrew.darwinModules.nix-homebrew
