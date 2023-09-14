@@ -6,14 +6,11 @@ let
   email = "rladhkstn8@gmail.com";
 in
 {
-  zsh = {
+  fish = {
     enable = true;
-    autocd = false;
-    cdpath = ["~/.local/share/src"];
     shellAliases = {
       tf = "terraform";
       k = "kubectl";
-			ls = "eza";
     };
   };
 
@@ -33,11 +30,30 @@ in
     };
   };
 
+  zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
   ssh = {
     enable = true;
   };
 
   tmux = {
     enable = true;
+  };
+
+  direnv = {
+    enable = true;
+
+    nix-direnv = {
+      enable = true;
+    };
+  };
+
+  lsd = {
+    enable = true;
+
+    enableAliases = true;
   };
 }
