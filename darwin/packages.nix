@@ -14,6 +14,7 @@ with pkgs; [
   starship
   karabiner-elements
   _1password
+  croc
 
   # Cloud-related tools and SDKs
   docker
