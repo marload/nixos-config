@@ -16,6 +16,7 @@
   # Productivity Tools
   "rectangle"
   "raycast"
+  "1password"
 
   # Web browser
   "arc"
