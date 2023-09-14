@@ -17,6 +17,7 @@
 
   # Productivity Tools
   "rectangle"
+  "raycask"
 
   # Web browser
   "arc"
