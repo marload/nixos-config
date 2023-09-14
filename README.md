@@ -6,10 +6,12 @@
 xcode-select --install
 ```
 
-### Cloning nixos-config repository
+### General
 
 ```bash
 git clone https://github.com/marload/nixos-config ~/.config/nixos-config
+sudo mkdir -p /opt/homebrew/Library/Taps/homebrew/ && sudo /bin/chmod +a "$USER allow list,add_file,search,delete,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown" /opt/homebrew/Library/Taps/homebrew/
+sudo scutil --set ComputerName "Marloads-MBP"
 ```
 
 ### Install Nix
@@ -23,12 +25,6 @@ sh <(curl -L https://nixos.org/nix/install)
 ```bash
 nix-channel --add https://github.com/rycee/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
-```
-
-### Allow homebrew path
-
-```bash
-sudo mkdir -p /opt/homebrew/Library/Taps/homebrew/ && sudo /bin/chmod +a "$USER allow list,add_file,search,delete,add_subdirectory,delete_child,readattr,writeattr,readextattr,writeextattr,readsecurity,writesecurity,chown" /opt/homebrew/Library/Taps/homebrew/
 ```
 
 ### Build
