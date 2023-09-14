@@ -15,6 +15,7 @@ with pkgs; [
   karabiner-elements
   _1password
   croc
+  ipcalc
 
   # Cloud-related tools and SDKs
   docker
@@ -29,6 +30,9 @@ with pkgs; [
   azure-cli
   google-cloud-sdk
   kubernetes-helm
+  istioctl
+  tcpdump
+  vault
 
   # Source code management, Git, GitHub tools
   gh
