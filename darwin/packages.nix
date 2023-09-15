@@ -22,7 +22,6 @@ with pkgs; [
   docker
   docker-compose
   awscli2
-  terraform
   tflint
   k9s
   saml2aws
