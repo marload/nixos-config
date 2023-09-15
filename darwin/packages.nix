@@ -17,6 +17,7 @@ with pkgs; [
   croc
   ipcalc
   alacritty
+  starship
 
   # Cloud-related tools and SDKs
   docker

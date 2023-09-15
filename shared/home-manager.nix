@@ -11,7 +11,12 @@ in
     shellAliases = {
       tf = "terraform";
       k = "kubectl";
+      sofish = "source ~/.config/fish/config.fish";
     };
+    interactiveShellInit = ''
+      starship init fish | source
+      fish_add_path /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+    '';
   };
 
   git = {

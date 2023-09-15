@@ -10,7 +10,6 @@ in
 
   environment = {
     systemPackages = import ./packages.nix { inherit pkgs; };
-    shells = with pkgs; [ fish ];
   };
 
   # Enable fonts dir

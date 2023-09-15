@@ -20,7 +20,7 @@ in
     casks = pkgs.callPackage ./casks.nix {};
     brews = [
       "tfenv"
-    ]
+    ];
     masApps = {
       "yoink" = 457622435;
       "kakaotalk" = 869223134;
