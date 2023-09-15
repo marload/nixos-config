@@ -19,6 +19,8 @@ in
 
       alias vi="nvim"
       alias vim="nvim"
+      alias tf="terraform"
+      alias k="kubectl"
 
       eval "$(starship init zsh)"
       
