@@ -24,6 +24,7 @@ in
     autocd = false;
     cdpath = [ "~/.local/share/src" ];
     enableAutosuggestions = true;
+    syntaxHighlighting.enable = true;
     initExtra = ''
       export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
 
