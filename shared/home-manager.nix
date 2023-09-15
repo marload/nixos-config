@@ -65,6 +65,10 @@ in
   alacritty = {
     enable = true;
     settings = {
+      shell = {
+        program = "/Users/marload/.nix-profile/bin/fish";
+      };
+
       cursor = {
         style = "Block";
       };
