@@ -15,13 +15,6 @@ in
     shell = pkgs.fish;
   };
 
-  homebrew.enable = true;
-  homebrew.casks = pkgs.callPackage ./casks.nix {};
-  homebrew.masApps = {
-    "yoink" = 457622435;
-    "kakaotalk" = 869223134;
-  };
-
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix {};
