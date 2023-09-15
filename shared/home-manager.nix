@@ -126,4 +126,6 @@ in
       };
     };
   };
+
+  starship = (import ./programs/starship) { inherit pkgs; };
 }
