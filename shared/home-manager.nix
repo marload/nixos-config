@@ -6,19 +6,6 @@ let
   email = "rladhkstn8@gmail.com";
 in
 {
-  fish = {
-    enable = true;
-    shellAliases = {
-      tf = "terraform";
-      k = "kubectl";
-      sofish = "source ~/.config/fish/config.fish";
-    };
-    interactiveShellInit = ''
-      starship init fish | source
-      fish_add_path /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
-    '';
-  };
-
   zsh = {
     enable = true;
     autocd = false;
@@ -27,8 +14,14 @@ in
     syntaxHighlighting.enable = true;
     initExtra = ''
       export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
+      export PATH=/opt/homebrew/bin:$PATH
+      export EDITOR=nvim
+
+      alias vi="nvim"
+      alias vim="nvim"
 
       eval "$(starship init zsh)"
+      
     '';
   };
 

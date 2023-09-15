@@ -18,20 +18,17 @@ git clone https://github.com/marload/nixos-config ~/.config/nixos-config
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 ```
 
-### Update nix channel
+### Update and Build
 
 ```bash
 nix-channel --add https://github.com/rycee/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
 export NIXPKGS_ALLOW_UNFREE=1
-```
-
-### Build
-
-```bash
 export FLAKE="Marloads-MBA"
 export SYSTEM="darwinConfigurations.$FLAKE.system"
 nix --experimental-features 'nix-command flakes' build .#$SYSTEM --impure $@
+```
+
 ```
 
 ```bash
