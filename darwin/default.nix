@@ -16,6 +16,8 @@ in
   fonts.fontDir.enable = true;
 
   services.nix-daemon.enable = true;
+
+  programs.zsh.enable = true;
   
   # Setup user, packages, programs
   nix = {

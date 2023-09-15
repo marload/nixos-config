@@ -19,6 +19,18 @@ in
     '';
   };
 
+  zsh = {
+    enable = true;
+    autocd = false;
+    cdpath = [ "~/.local/share/src" ];
+    enableAutosuggestions = true;
+    initExtra = ''
+      export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
+
+      eval "$(starship init zsh)"
+    '';
+  };
+
   git = {
     enable = true;
     ignores = ["*.swp"];
@@ -65,10 +77,6 @@ in
   alacritty = {
     enable = true;
     settings = {
-      shell = {
-        program = "/Users/marload/.nix-profile/bin/fish";
-      };
-
       cursor = {
         style = "Block";
       };
