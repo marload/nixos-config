@@ -15,9 +15,6 @@ in
 
   # Enable fonts dir
   fonts.fontDir.enable = true;
-  fonts.fonts = with pkgs; [
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "MesloLGS" ]; })
-  ];
 
   services.nix-daemon.enable = true;
   

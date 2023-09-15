@@ -16,6 +16,7 @@ with pkgs; [
   _1password
   croc
   ipcalc
+  alacritty
 
   # Cloud-related tools and SDKs
   docker
@@ -32,6 +33,11 @@ with pkgs; [
   kubernetes-helm
   istioctl
   tcpdump
+
+  # Media related
+  ffmpeg
+  fd
+  meslo-lgs-nf
 
   # Source code management, Git, GitHub tools
   gh
@@ -58,4 +64,7 @@ with pkgs; [
   nodePackages.nodemon
   nodePackages.prettier
   nodePackages.npm
+
+  # Lua packages
+  lua
 ]

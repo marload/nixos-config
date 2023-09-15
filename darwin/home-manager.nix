@@ -22,6 +22,18 @@ in
     "kakaotalk" = 869223134;
   };
 
+  homebrew = {
+    enable = true;
+    casks = pkgs.callPackage ./casks.nix {};
+    brews = [
+      "tfenv"
+    ]
+    masApps = {
+      "yoink" = 457622435;
+      "kakaotalk" = 869223134;
+    };
+  };
+
   home-manager = {
     useGlobalPkgs = true;
     users.${user} = { pkgs, config, lib, ... }:{
