@@ -10,12 +10,13 @@ in
 
   environment = {
     systemPackages = import ./packages.nix { inherit pkgs; };
+    shells = with pkgs; [bash zsh fish];
   };
 
   # Enable fonts dir
   fonts.fontDir.enable = true;
   fonts.fonts = with pkgs; [
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "MesloLGS" ]; })
   ];
 
   services.nix-daemon.enable = true;
