@@ -50,7 +50,7 @@ in
 
       dock = {
         autohide = true;
-        tilesize = 24;
+        tilesize = 48;
         orientation = "bottom";
       };
 

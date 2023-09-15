@@ -6,6 +6,7 @@ in
 {
   imports = [
     <home-manager/nix-darwin>
+    ./dock
   ];
 
   users.users.${user} = {
@@ -36,4 +37,25 @@ in
       home.stateVersion = "21.11";
     };
   };
+
+  local.dock.enable = true;
+  local.dock.entries = [
+    { path = "/Applications/Alacritty.app"; }
+    { path = "/Applications/Arc.app"; }
+    { path = "/Applications/Obsidian.app"; }
+    { path = "/Applications/KakaoTalk.app"; }
+    { path = "/System/Applications/Music.app/"; }
+    { path = "/Applications/Visual Studio Code.app"; }
+    {
+      path = "${config.users.users.${user}.home}/.local/share/";
+      section = "others";
+      options = "--sort name --view grid --display folder";
+    }
+    {
+      path = "${config.users.users.${user}.home}/Downloads";
+      section = "others";
+      options = "--sort name --view grid --display stack";
+    }
+  ];
+
 }

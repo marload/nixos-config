@@ -18,6 +18,7 @@ with pkgs; [
   ipcalc
   alacritty
   starship
+  tree-sitter
 
   # Cloud-related tools and SDKs
   docker
@@ -54,17 +55,18 @@ with pkgs; [
   neovim
   zoxide
 
-  # Python packages
+  # Programming languages
   python312
   python39Packages.virtualenv
-
-  # Nodejs packages
   nodejs
   nodePackages.live-server
   nodePackages.nodemon
   nodePackages.prettier
   nodePackages.npm
-
-  # Lua packages
+  go
+  yarn
+  rustup
+  jdk
+  deno
   lua
 ]
