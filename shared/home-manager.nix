@@ -36,10 +36,13 @@ in
       enable = true;
     };
     extraConfig = {
+      push.autoSetupRemote = true;
       init.defaultBranch = "main";
-      core = {
-        editor = "nvim";
-      };
+      core.editor = "nvim";
+      gpg.format = "ssh";
+      gpg.ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+      commit.gpgsign = true;
+      user.signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFiq+tWPw1BFb20P6WLLvx6meyPLnFDKI7Jvan8fD+py";
     };
   };
 
