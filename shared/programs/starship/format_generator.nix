@@ -78,7 +78,6 @@ let
     "$cmd_duration"
     "$line_break"
     "$jobs"
-    "$battery"
     "$time"
     "$status"
     "$os"

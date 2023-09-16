@@ -16,7 +16,6 @@ with pkgs; [
   _1password
   croc
   ipcalc
-  alacritty
   starship
   tree-sitter
   difftastic
