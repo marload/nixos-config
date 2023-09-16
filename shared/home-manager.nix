@@ -23,7 +23,6 @@ in
       alias k="kubectl"
 
       eval "$(starship init zsh)"
-      
     '';
   };
 
@@ -57,6 +56,19 @@ in
 
   tmux = {
     enable = true;
+
+    keyMode = "vi";
+
+    terminator.enable = true;
+
+    plugins = with pkgs.tmuxPlugins; [
+      {
+        plugin = catppuccin;
+        extraConfig = ''
+          set -g @catppuccin_window_tabs_enabled on
+        '';
+      }
+    ];
   };
 
   direnv = {
