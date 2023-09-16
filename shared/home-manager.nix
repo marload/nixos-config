@@ -15,12 +15,14 @@ in
     initExtra = ''
       export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
       export PATH=/opt/homebrew/bin:$PATH
+      export PATH=$HOME/.local/share/bin:$PATH
       export EDITOR=nvim
 
       alias vi="nvim"
       alias vim="nvim"
       alias tf="terraform"
       alias k="kubectl"
+      alias diff="difft"
 
       eval "$(starship init zsh)"
     '';
@@ -58,8 +60,6 @@ in
     enable = true;
 
     keyMode = "vi";
-
-    terminator.enable = true;
 
     plugins = with pkgs.tmuxPlugins; [
       {

@@ -19,6 +19,7 @@ with pkgs; [
   alacritty
   starship
   tree-sitter
+  difftastic
 
   # Cloud-related tools and SDKs
   docker
