@@ -52,8 +52,15 @@ in
 
       dock = {
         autohide = true;
+        show-recents = false;
+        launchanim = true;
+        mouse-over-hilite-stack = true;
         tilesize = 48;
         orientation = "bottom";
+      };
+
+      finder = {
+        _FXShowPosixPathInTitle = false;
       };
 
       trackpad = {
