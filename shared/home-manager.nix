@@ -18,6 +18,21 @@ in
       export PATH=$HOME/.local/share/bin:$PATH
       export EDITOR=nvim
 
+      # Git Alias
+      alias g="git"
+      alias gs="git status"
+      alias ga="git add"
+      alias gc="git commit"
+      alias gca="git commit --amend"
+      alias gcm="git commit -m"
+      alias gco="git checkout"
+      alias gcb="git checkout -b"
+      alias gd="git diff"
+      alias gds="git diff --staged"
+      alias gl="git log"
+      alias gp="git push"
+      alias gpl="git pull"
+
       alias vi="nvim"
       alias vim="nvim"
       alias tf="terraform"

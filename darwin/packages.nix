@@ -19,6 +19,7 @@ with pkgs; [
   starship
   tree-sitter
   difftastic
+  helix
 
   # Cloud-related tools and SDKs
   docker
