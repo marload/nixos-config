@@ -26,10 +26,10 @@ sudo /bin/chmod +a "$USER allow list,add_file,search,delete,add_subdirectory,del
 
 echo "${GREEN}Starting build...${CLEAR}"
 
-nix --experimental-features 'nix-command flakes' build .#$SYSTEM $@
+nix --experimental-features 'nix-command flakes' build .#$SYSTEM $@ --impure
 
 echo "${GREEN}Switching to new generation...${CLEAR}"
-./result/sw/bin/darwin-rebuild switch --flake .#$FLAKE $@
+./result/sw/bin/darwin-rebuild switch --flake .#$FLAKE $@ --impure
 
 echo "${GREEN}Cleaning up...${CLEAR}"
 unlink ./result
