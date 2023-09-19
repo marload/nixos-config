@@ -9,5 +9,5 @@ CLEAR='\033[0m'
 FLAKE=$(hostname -s)
 
 echo "${GREEN}Switching to new generation...${CLEAR}"
-sudo ./result/sw/bin/darwin-rebuild switch --flake .#$FLAKE $@ --impure
+./result/sw/bin/darwin-rebuild switch --flake .#$FLAKE $@ --impure
 echo "${GREEN}Swtich done${CLEAR}"
