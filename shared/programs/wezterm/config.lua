@@ -7,6 +7,4 @@ return {
   check_for_updates = false,
   warn_about_missing_glyphs = false,
   use_ime = true,
-  default_prog = {"zellih"},
-  -- default_prog = { "sh", "/home/beleap/.scripts/spawn.sh" },
 }
