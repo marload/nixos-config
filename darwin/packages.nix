@@ -2,7 +2,6 @@
 
 with pkgs; [
   # General packages for development and system management
-  btop
   wget
   gcc
   openssh
@@ -22,6 +21,7 @@ with pkgs; [
   helix
   wezterm
   zellij
+  bottom
 
   # Cloud-related tools and SDKs
   docker
