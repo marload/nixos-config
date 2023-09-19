@@ -73,4 +73,9 @@ with pkgs; [
   jdk
   deno
   lua
+
+  # Fonts
+  noto-fonts-cjk-sans
+  noto-fonts-cjk-serif
+  (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
 ]
