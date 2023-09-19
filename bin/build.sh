@@ -29,7 +29,7 @@ echo "${GREEN}Starting build...${CLEAR}"
 nix --experimental-features 'nix-command flakes' build .#$SYSTEM $@ --impure
 
 echo "${GREEN}Switching to new generation...${CLEAR}"
-./result/sw/bin/darwin-rebuild switch --flake .#$FLAKE $@ --impure
+sudo ./result/sw/bin/darwin-rebuild switch --flake .#$FLAKE $@ --impure
 
 echo "${GREEN}Cleaning up...${CLEAR}"
 unlink ./result
