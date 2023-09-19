@@ -47,5 +47,49 @@
         ];
       };
     };
+
+    darwinConfigurations = let user = "marload"; in {
+      "Marloads-MBA" = nix-darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        modules = [
+          nix-homebrew.darwinModules.nix-homebrew
+          {
+            nix-homebrew = {
+              enable = true;
+              user = "${user}";
+              taps = {
+                "homebrew/homebrew-core" = homebrew-core;
+                "homebrew/homebrew-cask" = homebrew-cask;
+              };
+              mutableTaps = false;
+              autoMigrate = true;
+            };
+          }
+          ./darwin
+        ];
+      };
+    };
+
+    darwinConfigurations = let user = "marload"; in {
+      "Marloads-MM" = nix-darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        modules = [
+          nix-homebrew.darwinModules.nix-homebrew
+          {
+            nix-homebrew = {
+              enable = true;
+              user = "${user}";
+              taps = {
+                "homebrew/homebrew-core" = homebrew-core;
+                "homebrew/homebrew-cask" = homebrew-cask;
+              };
+              mutableTaps = false;
+              autoMigrate = true;
+            };
+          }
+          ./darwin
+        ];
+      };
+    };
   };
 }
