@@ -46,10 +46,8 @@
           ./darwin
         ];
       };
-    };
 
-    darwinConfigurations = let user = "marload"; in {
-      "Marloads-MBA" = nix-darwin.lib.darwinSystem {
+      "Marloads-MM" = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
           nix-homebrew.darwinModules.nix-homebrew
@@ -68,10 +66,8 @@
           ./darwin
         ];
       };
-    };
 
-    darwinConfigurations = let user = "marload"; in {
-      "Marloads-MM" = nix-darwin.lib.darwinSystem {
+      "Marloads-MBA" = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         modules = [
           nix-homebrew.darwinModules.nix-homebrew
