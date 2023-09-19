@@ -35,6 +35,7 @@ with pkgs; [
   kubernetes-helm
   istioctl
   tcpdump
+  kube-capacity
 
   # Media related
   ffmpeg
