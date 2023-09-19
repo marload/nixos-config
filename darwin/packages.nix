@@ -20,6 +20,8 @@ with pkgs; [
   tree-sitter
   difftastic
   helix
+  wezterm
+  zellij
 
   # Cloud-related tools and SDKs
   docker
