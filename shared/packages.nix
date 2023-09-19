@@ -77,5 +77,5 @@ with pkgs; [
   # Fonts
   noto-fonts-cjk-sans
   noto-fonts-cjk-serif
-  (nerdfonts.override { fonts = [ "CascadiaCode" ]; })
+  (nerdfonts.override { fonts = [ "CascadiaCode" "FiraCode" ]; })
 ]
