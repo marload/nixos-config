@@ -117,7 +117,7 @@ in
 
       font = {
         normal = {
-          family = "MesloLGS NF";
+          family = "FiraCode Nerd Font Mono";
           style = "Regular";
         };
         size = lib.mkMerge [
@@ -165,5 +165,6 @@ in
     };
   };
 
+  wezterm = (import ./programs/wezterm) { inherit pkgs; };
   starship = (import ./programs/starship) { inherit pkgs; };
 }

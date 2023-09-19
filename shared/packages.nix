@@ -38,6 +38,7 @@ with pkgs; [
   istioctl
   tcpdump
   kube-capacity
+  vault-bin
 
   # Media related
   ffmpeg
