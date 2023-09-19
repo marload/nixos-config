@@ -9,7 +9,7 @@ in
   ];
 
   environment = {
-    systemPackages = import ./packages.nix { inherit pkgs; };
+    systemPackages = import ../shared/packages.nix { inherit pkgs; };
   };
 
   # Enable fonts dir
