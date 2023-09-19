@@ -110,8 +110,8 @@ in
       window = {
         opacity = 1.0;
         padding = {
-          x = 24;
-          y = 24;
+          x = 10;
+          y = 10;
         };
       };
 
