@@ -8,7 +8,6 @@
   "wireshark"
   "openvpn-connect"
   "visual-studio-code"
-  "alacritty"
   
   # Communication Tools
   "obsidian"
