@@ -71,24 +71,8 @@ in
     enable = true;
   };
 
-  tmux = {
-    enable = true;
-
-    keyMode = "vi";
-
-    plugins = with pkgs.tmuxPlugins; [
-      {
-        plugin = catppuccin;
-        extraConfig = ''
-          set -g @catppuccin_window_tabs_enabled on
-        '';
-      }
-    ];
-  };
-
   direnv = {
     enable = true;
-
     nix-direnv = {
       enable = true;
     };

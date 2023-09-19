@@ -40,7 +40,7 @@ in
 
   local.dock.enable = true;
   local.dock.entries = [
-    { path = "/Applications/Alacritty.app"; }
+    { path = "/Applications/WezTerm.app"; }
     { path = "/Applications/Arc.app"; }
     { path = "/Applications/Obsidian.app"; }
     { path = "/Applications/KakaoTalk.app"; }
