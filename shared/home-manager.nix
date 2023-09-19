@@ -165,6 +165,7 @@ in
     };
   };
 
+  zellij = (import ./programs/zellij) { inherit pkgs; };
   wezterm = (import ./programs/wezterm) { inherit pkgs; };
   starship = (import ./programs/starship) { inherit pkgs; };
 }
