@@ -1,3 +1,4 @@
 ```bash
-chmod +x bin/darwin-build && chmod +x bin/build && bin/build
+sudo mv /etc/nix/nix.conf /etc/nix/nix.conf.before-nix-darwin
+chmod +x bin/build && bin/build
 ```
