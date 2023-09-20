@@ -16,6 +16,17 @@ in
     shell = pkgs.zsh;
   };
 
+  services = {
+    skhd = import ./service/skhd.nix { inherit pkgs; };
+    yabai = import ./service/yabai.nix { inherit pkgs; };
+  };
+
+  system = {
+    keyboard = {
+      enableKeyMapping = true;
+    };
+  };
+
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix {};
