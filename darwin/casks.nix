@@ -13,7 +13,6 @@
   "obsidian"
 
   # Productivity Tools
-  "rectangle"
   "raycast"
   "1password"
 
