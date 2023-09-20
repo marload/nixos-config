@@ -12,11 +12,6 @@
     window_placement = "second_child";
     focus_follows_mouse = "autoraise";
     mouse_follows_focus = "off";
-    top_padding = "10";
-    bottom_padding = "10";
-    left_padding = "10";
-    right_padding = "10";
-    window_gap = "10";
   };
   extraConfig = ''
     yabai -m rule --add title='Preferences' manage=off layer=above
