@@ -8,7 +8,7 @@
   "wireshark"
   "openvpn-connect"
   "visual-studio-code"
-  
+
   # Communication Tools
   "obsidian"
 
