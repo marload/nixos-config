@@ -18,7 +18,7 @@ in
   services.nix-daemon.enable = true;
 
   programs.zsh.enable = true;
-  
+
   # Setup user, packages, programs
   nix = {
     package = pkgs.nixUnstable;
@@ -41,6 +41,7 @@ in
   system.checks.verifyNixPath = false;
 
   system = {
+    keyboard.enableKeyMapping = true;
     stateVersion = 4;
 
     defaults = {
