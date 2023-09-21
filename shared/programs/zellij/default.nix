@@ -7,6 +7,6 @@ in
   enableZshIntegration = true;
   inherit package;
   settings = {
-    theme = "gruvbox-dark";
+    theme = "catppuccin-mocha";
   };
 }
