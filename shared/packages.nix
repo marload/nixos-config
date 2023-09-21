@@ -40,6 +40,7 @@ with pkgs; [
   tcpdump
   kube-capacity
   vault-bin
+  kdash
 
   # Media related
   ffmpeg

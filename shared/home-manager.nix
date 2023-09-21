@@ -40,6 +40,7 @@ in
       alias diff="difft"
 
 			alias lzd="lazydocker"
+      alias kd="kdash"
 
       eval "$(starship init zsh)"
     '';
