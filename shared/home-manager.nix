@@ -33,6 +33,7 @@ in
       alias gp="git push"
       alias gpl="git pull"
 
+			alias v="nvim"
       alias vi="nvim"
       alias vim="nvim"
       alias tf="terraform"
@@ -41,7 +42,6 @@ in
 
 			alias lzd="lazydocker"
       alias kd="kdash"
-
       eval "$(starship init zsh)"
     '';
   };
