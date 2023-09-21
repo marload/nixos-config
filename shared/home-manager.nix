@@ -39,6 +39,8 @@ in
       alias k="kubectl"
       alias diff="difft"
 
+			alias lzd="lazydocker"
+
       eval "$(starship init zsh)"
     '';
   };

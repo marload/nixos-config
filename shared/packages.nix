@@ -24,6 +24,7 @@ with pkgs; [
   bottom
 
   # Cloud-related tools and SDKs
+	lazydocker
   docker
   docker-compose
   awscli2
