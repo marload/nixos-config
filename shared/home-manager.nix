@@ -38,14 +38,14 @@ in
       rebuild = "~/.config/nixos-config/bin/rebuild.sh";
     };
     initExtra = ''
-            export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
-            export PATH=/opt/homebrew/bin:$PATH
-            export PATH=$HOME/.local/share/bin:$PATH
-            export EDITOR=nvim
+      export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
+      export PATH=/opt/homebrew/bin:$PATH
+      export PATH=$HOME/.local/share/bin:$PATH
+      export EDITOR=nvim
 
-      			set -o vi
-      			bindkey -M viins jk vi-cmd-mode
-            eval "$(starship init zsh)"
+      set -o vi
+      bindkey -M viins jk vi-cmd-mode
+      eval "$(starship init zsh)"
     '';
   };
 
@@ -76,9 +76,9 @@ in
   ssh = {
     enable = true;
     extraConfig = ''
-      			Host *
-      				IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
-      		'';
+      Host *
+        IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+    '';
   };
 
   direnv = {
@@ -96,4 +96,5 @@ in
   zellij = (import ./programs/zellij) { inherit pkgs; };
   wezterm = (import ./programs/wezterm) { inherit pkgs; };
   starship = (import ./programs/starship) { inherit pkgs; };
+  alacritty = (import ./programs/alacritty) { inherit pkgs; lib; };
 }
