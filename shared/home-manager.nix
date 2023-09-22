@@ -12,45 +12,46 @@ in
     cdpath = [ "~/.local/share/src" ];
     enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
+    shellAliases = {
+      # Alias git
+      g = "git";
+      gs = "git status";
+      ga = "git add";
+      gc = "git commit";
+      gcm = "git commit -m";
+      gp = "git push";
+      gpl = "git pull";
+      gco = "git checkout";
+      gcb = "git checkout -b";
+
+      # Alias nvim
+      v = "nvim";
+      vi = "nvim";
+      vim = "nvim";
+
+      # ETC
+      tf = "terraform";
+      k = "kubectl";
+      kd = "kdash";
+      lzd = "lazydocker";
+      clr = "clear";
+      rebuild = "~/.config/nixos-config/bin/rebuild.sh";
+    };
     initExtra = ''
-      export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
-      export PATH=/opt/homebrew/bin:$PATH
-      export PATH=$HOME/.local/share/bin:$PATH
-      export EDITOR=nvim
+            export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
+            export PATH=/opt/homebrew/bin:$PATH
+            export PATH=$HOME/.local/share/bin:$PATH
+            export EDITOR=nvim
 
-			set -o vi
-
-      # Git Alias
-      alias g="git"
-      alias gs="git status"
-      alias ga="git add"
-      alias gc="git commit"
-      alias gca="git commit --amend"
-      alias gcm="git commit -m"
-      alias gco="git checkout"
-      alias gcb="git checkout -b"
-      alias gd="git diff"
-      alias gds="git diff --staged"
-      alias gl="git log"
-      alias gp="git push"
-      alias gpl="git pull"
-
-			alias v="nvim"
-      alias vi="nvim"
-      alias vim="nvim"
-      alias tf="terraform"
-      alias k="kubectl"
-      alias diff="difft"
-
-			alias lzd="lazydocker"
-      alias kd="kdash"
-      eval "$(starship init zsh)"
+      			set -o vi
+      			bindkey -M viins jk vi-cmd-mode
+            eval "$(starship init zsh)"
     '';
   };
 
   git = {
     enable = true;
-    ignores = ["*.swp"];
+    ignores = [ "*.swp" ];
     userName = name;
     userEmail = email;
     lfs = {
@@ -74,10 +75,10 @@ in
 
   ssh = {
     enable = true;
-		extraConfig = ''
-			Host *
-				IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
-		'';
+    extraConfig = ''
+      			Host *
+      				IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+      		'';
   };
 
   direnv = {

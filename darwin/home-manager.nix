@@ -25,11 +25,16 @@ in
     keyboard = {
       enableKeyMapping = true;
     };
+    defaults = {
+      dock = {
+        mru-spaces = false;
+      };
+    };
   };
 
   homebrew = {
     enable = true;
-    casks = pkgs.callPackage ./casks.nix {};
+    casks = pkgs.callPackage ./casks.nix { };
     brews = [
       "tfenv"
     ];
@@ -41,10 +46,10 @@ in
 
   home-manager = {
     useGlobalPkgs = true;
-    users.${user} = { pkgs, config, lib, ... }:{
+    users.${user} = { pkgs, config, lib, ... }: {
       home.enableNixpkgsReleaseCheck = false;
-      home.packages = pkgs.callPackage ../shared/packages.nix {};
-      programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
+      home.packages = pkgs.callPackage ../shared/packages.nix { };
+      programs = { } // import ../shared/home-manager.nix { inherit config pkgs lib; };
       home.stateVersion = "21.11";
     };
   };

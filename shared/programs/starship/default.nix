@@ -4,13 +4,12 @@
   settings = {
     nix_shell.symbol = "(nix)";
     format = "$directory\n$character";
-    right_format = (import ./format_generator.nix { inherit pkgs; })
-      .remove { 
-        to_remove = [
-          "$directory"
-          "$character"
-        ]; 
-      };
+    right_format = (import ./format_generator.nix { inherit pkgs; }).remove {
+      to_remove = [
+        "$directory"
+        "$character"
+      ];
+    };
     directory = {
       truncation_symbol = "(...)/";
     };
@@ -33,7 +32,8 @@
       threshold = -1;
       format = "\\[$symbol[$ram_pct]($style)\\]";
       symbol = "󰍛 ";
-    };  aws = {
+    };
+    aws = {
       format = "\\[[$symbol($profile)(\\($region\\))(\\[$duration\\])]($style)\\]";
     };
     bun = {

@@ -22,9 +22,10 @@ with pkgs; [
   wezterm
   zellij
   bottom
+  nixpkgs-fmt
 
   # Cloud-related tools and SDKs
-	lazydocker
+  lazydocker
   docker
   docker-compose
   awscli2
@@ -41,7 +42,7 @@ with pkgs; [
   kube-capacity
   vault-bin
   kdash
-	open-policy-agent
+  open-policy-agent
 
   # Media related
   ffmpeg
@@ -77,6 +78,7 @@ with pkgs; [
   jdk
   deno
   lua
+  stylua
 
   # Fonts
   noto-fonts-cjk-sans

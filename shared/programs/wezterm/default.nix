@@ -1,5 +1,5 @@
 { pkgs }:
 {
   enable = true;
-  extraConfig = builtins.readFile(./. + "/config.lua");
+  extraConfig = builtins.readFile (./. + "/config.lua");
 }

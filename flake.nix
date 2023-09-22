@@ -22,70 +22,70 @@
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, nix-homebrew, homebrew-core, homebrew-cask }:
-  let
-    user = "marload";
-  in
-  {
-    darwinConfigurations = let user = "marload"; in {
-      "Marloads-MBP" = nix-darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
-        modules = [
-          nix-homebrew.darwinModules.nix-homebrew
-          {
-            nix-homebrew = {
-              enable = true;
-              user = "${user}";
-              taps = {
-                "homebrew/homebrew-core" = homebrew-core;
-                "homebrew/homebrew-cask" = homebrew-cask;
+    let
+      user = "marload";
+    in
+    {
+      darwinConfigurations = let user = "marload"; in {
+        "Marloads-MBP" = nix-darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          modules = [
+            nix-homebrew.darwinModules.nix-homebrew
+            {
+              nix-homebrew = {
+                enable = true;
+                user = "${user}";
+                taps = {
+                  "homebrew/homebrew-core" = homebrew-core;
+                  "homebrew/homebrew-cask" = homebrew-cask;
+                };
+                mutableTaps = false;
+                autoMigrate = true;
               };
-              mutableTaps = false;
-              autoMigrate = true;
-            };
-          }
-          ./darwin
-        ];
-      };
+            }
+            ./darwin
+          ];
+        };
 
-      "Marloads-MM" = nix-darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
-        modules = [
-          nix-homebrew.darwinModules.nix-homebrew
-          {
-            nix-homebrew = {
-              enable = true;
-              user = "${user}";
-              taps = {
-                "homebrew/homebrew-core" = homebrew-core;
-                "homebrew/homebrew-cask" = homebrew-cask;
+        "Marloads-MM" = nix-darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          modules = [
+            nix-homebrew.darwinModules.nix-homebrew
+            {
+              nix-homebrew = {
+                enable = true;
+                user = "${user}";
+                taps = {
+                  "homebrew/homebrew-core" = homebrew-core;
+                  "homebrew/homebrew-cask" = homebrew-cask;
+                };
+                mutableTaps = false;
+                autoMigrate = true;
               };
-              mutableTaps = false;
-              autoMigrate = true;
-            };
-          }
-          ./darwin
-        ];
-      };
+            }
+            ./darwin
+          ];
+        };
 
-      "Marloads-MBA" = nix-darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
-        modules = [
-          nix-homebrew.darwinModules.nix-homebrew
-          {
-            nix-homebrew = {
-              enable = true;
-              user = "${user}";
-              taps = {
-                "homebrew/homebrew-core" = homebrew-core;
-                "homebrew/homebrew-cask" = homebrew-cask;
+        "Marloads-MBA" = nix-darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          modules = [
+            nix-homebrew.darwinModules.nix-homebrew
+            {
+              nix-homebrew = {
+                enable = true;
+                user = "${user}";
+                taps = {
+                  "homebrew/homebrew-core" = homebrew-core;
+                  "homebrew/homebrew-cask" = homebrew-cask;
+                };
+                mutableTaps = false;
+                autoMigrate = true;
               };
-              mutableTaps = false;
-              autoMigrate = true;
-            };
-          }
-          ./darwin
-        ];
+            }
+            ./darwin
+          ];
+        };
       };
     };
-  };
 }
