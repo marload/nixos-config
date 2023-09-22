@@ -41,6 +41,7 @@ with pkgs; [
   kube-capacity
   vault-bin
   kdash
+	open-policy-agent
 
   # Media related
   ffmpeg

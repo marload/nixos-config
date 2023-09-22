@@ -18,6 +18,8 @@ in
       export PATH=$HOME/.local/share/bin:$PATH
       export EDITOR=nvim
 
+			set -o vi
+
       # Git Alias
       alias g="git"
       alias gs="git status"
