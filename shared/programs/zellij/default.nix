@@ -8,5 +8,6 @@ in
   inherit package;
   settings = {
     theme = "catppuccin-mocha";
+		layout = "compact";
   };
 }
