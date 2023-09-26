@@ -23,6 +23,7 @@ with pkgs; [
   zellij
   bottom
   nixpkgs-fmt
+	httpie
 
   # Cloud-related tools and SDKs
   lazydocker
