@@ -11,6 +11,7 @@
 
   # Communication Tools
   "obsidian"
+	"anytype"
 
   # Productivity Tools
   "raycast"
