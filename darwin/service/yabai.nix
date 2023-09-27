@@ -24,7 +24,8 @@
         yabai -m rule --add app='^System Information$' manage=off layer=above
         yabai -m rule --add app="^Messages$" manage=off
         yabai -m rule --add app="1Password" manage=off
-				yabai -m rule --add app="^Slack$" title="Window Title" border=off
+
+				yabai -m config window_border_blur off
 
     		yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
         sudo yabai --load-sa
