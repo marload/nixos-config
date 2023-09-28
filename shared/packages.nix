@@ -44,6 +44,7 @@ with pkgs; [
   vault-bin
   kdash
   open-policy-agent
+	vault-bin
 
   # Media related
   ffmpeg
