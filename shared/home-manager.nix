@@ -46,6 +46,8 @@ in
       set -o vi
       bindkey -M viins jk vi-cmd-mode
       eval "$(starship init zsh)"
+
+			tmux attach -t main
     '';
   };
 
@@ -93,8 +95,7 @@ in
     enableAliases = true;
   };
 
-  zellij = (import ./programs/zellij) { inherit pkgs; };
-  wezterm = (import ./programs/wezterm) { inherit pkgs; };
   starship = (import ./programs/starship) { inherit pkgs; };
 	alacritty = (import ./programs/alacritty) { inherit pkgs; };
+	tmux = (import ./programs/tmux) { inherit pkgs; };
 }

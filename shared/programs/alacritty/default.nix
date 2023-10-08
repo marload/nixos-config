@@ -7,6 +7,14 @@
 				family = "FiraCode Nerd Font Mono";
 				style = "Regular";
 			};
+			size = 12;
+		};
+		window = {
+			opacity = 1.0;
+			padding = {
+				x = 6;
+				y = 7;
+			};
 		};
 		dynamic_padding = true;
 		decorations = "full";
