@@ -46,8 +46,6 @@ in
       set -o vi
       bindkey -M viins jk vi-cmd-mode
       eval "$(starship init zsh)"
-
-			tmux attach -t main
     '';
   };
 

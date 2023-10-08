@@ -1,6 +1,7 @@
 { pkgs }:
 {
 	enable = true;
+
 	settings = {
 		font = {
 			normal = {
