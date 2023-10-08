@@ -25,6 +25,7 @@ with pkgs; [
   nixpkgs-fmt
 	httpie
 	alacritty
+  fish
 
   # Cloud-related tools and SDKs
   lazydocker
