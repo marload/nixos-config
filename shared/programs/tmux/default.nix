@@ -12,6 +12,7 @@
 	'';
 
 	plugins = with pkgs.tmuxPlugins; [
+		vim-tmux-navigator
 		{
 			plugin = catppuccin;
 			extraConfig = ''
