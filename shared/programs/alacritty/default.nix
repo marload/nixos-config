@@ -21,9 +21,9 @@
 				x = 6;
 				y = 7;
 			};
+			decorations = "none";
 		};
 		dynamic_padding = true;
-		decorations = "full";
 		title = "Terminal";
 		class = {
 			instance = "Alacritty";
