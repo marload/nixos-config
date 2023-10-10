@@ -3,7 +3,7 @@
 	enable = true;
 
 	settings = {
-		defaultShell = "zsh";
+		defaultShell = "${pkgs.zsh}/bin/zsh";
 		shell = {
 			program = "${pkgs.tmux}/bin/tmux";
 			args = [ "new-session" "-A" "-s" "main"];

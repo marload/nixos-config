@@ -5,6 +5,8 @@
 	clock24 = true;
 	keyMode = "vi";
 
+	shell = "${pkgs.zsh}/bin/zsh";
+
 	extraConfig = ''
 		set -g base-index 1
 		set-option -g default-terminal "screen-256color"

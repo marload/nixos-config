@@ -93,6 +93,10 @@ in
     enableAliases = true;
   };
 
+  carapace = {
+    enable = true;
+  };
+
   starship = (import ./programs/starship) { inherit pkgs; };
 	alacritty = (import ./programs/alacritty) { inherit pkgs; };
 	tmux = (import ./programs/tmux) { inherit pkgs; };
