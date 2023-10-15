@@ -3,10 +3,6 @@
 	enable = true;
 
 	settings = {
-		shell = {
-			program = "${pkgs.tmux}/bin/tmux";
-			args = [ "new-session" "-A" "-s" "main"];
-		};
 		font = {
 			normal = {
 				family = "FiraCode Nerd Font Mono";

@@ -1,7 +1,7 @@
 { pkgs }:
 
 {
-	enable = true;
+	enable = false;
 	clock24 = true;
 
 	shell = "${pkgs.zsh}/bin/zsh";
