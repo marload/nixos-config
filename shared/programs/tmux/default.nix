@@ -3,7 +3,6 @@
 {
 	enable = true;
 	clock24 = true;
-	keyMode = "vi";
 
 	shell = "${pkgs.zsh}/bin/zsh";
 	sensibleOnTop = false;
