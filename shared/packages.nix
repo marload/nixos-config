@@ -18,13 +18,9 @@ with pkgs; [
   starship
   tree-sitter
   difftastic
-  helix
-  wezterm
-  zellij
   bottom
   nixpkgs-fmt
 	httpie
-	alacritty
   fish
 
   # Cloud-related tools and SDKs

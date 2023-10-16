@@ -100,4 +100,6 @@ in
   starship = (import ./programs/starship) { inherit pkgs; };
 	alacritty = (import ./programs/alacritty) { inherit pkgs; };
 	tmux = (import ./programs/tmux) { inherit pkgs; };
+	zellij = (import ./programs/zellij) { inherit pkgs; };
+	wezterm = (import ./programs/wezterm) { inherit pkgs; };
 }
