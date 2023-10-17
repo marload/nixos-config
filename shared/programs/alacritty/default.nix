@@ -5,7 +5,7 @@
 	settings = {
 		font = {
 			normal = {
-				family = "FiraCode Nerd Font Mono";
+				family = "CaskaydiaCove Nerd Font Mono";
 				style = "Regular";
 			};
 			size = 12;
