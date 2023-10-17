@@ -8,4 +8,5 @@ return {
 	warn_about_missing_glyphs = false,
 	use_ime = true,
 	window_close_confirmation = "NeverPrompt",
+	window_decorations = "RESIZE",
 }
