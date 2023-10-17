@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 return {
 	font = wezterm.font("FiraCode Nerd Font Mono"),
-	font_size = 14.0,
+	font_size = 12.0,
 	color_scheme = "Catppuccin Mocha",
 	enable_tab_bar = false,
 	check_for_updates = false,
