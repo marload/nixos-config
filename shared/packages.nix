@@ -79,6 +79,7 @@ with pkgs; [
   deno
   lua
   stylua
+	clojure
 
   # Fonts
   noto-fonts-cjk-sans
