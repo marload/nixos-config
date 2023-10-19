@@ -80,6 +80,8 @@ with pkgs; [
   lua
   stylua
 	clojure
+	leiningen
+
 
   # Fonts
   noto-fonts-cjk-sans
