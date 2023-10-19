@@ -5,7 +5,7 @@
 	settings = {
 		font = {
 			normal = {
-				family = "CaskaydiaCove Nerd Font Mono";
+				family = "CaskaydiaCove Nerd Font";
 				style = "Regular";
 			};
 			size = 12;
