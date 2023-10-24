@@ -1,7 +1,7 @@
 { pkgs }:
 
 with pkgs; [
-  # General packages for development and system management
+
   wget
   gcc
   openssh
@@ -81,6 +81,7 @@ with pkgs; [
   stylua
 	clojure
 	leiningen
+	elixir
 
 
   # Fonts

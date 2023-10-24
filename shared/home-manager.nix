@@ -97,9 +97,155 @@ in
     enable = true;
   };
 
+	k9s = {
+		enable = true;
+    # GruvBox Dark
+    skin = {
+      k9s = {
+        body = {
+          fgColor = "white";
+          bgColor = "#282828";
+          logoColor = "#458588";
+        };
+        info = {
+          fgColor = "#83a598";
+          sectionColor = "#b8bb26";
+        };
+        frame = {
+          border = {
+            fgColor = "#458588";
+            focusColor = "#83a598";
+          };
+          menu = {
+            fgColor = "#ebdbb2";
+            keyColor = "#bdae93";
+            numKeyColor = "#d3869b";
+          };
+          crumbs = {
+            fgColor = "#ebdbb2";
+            bgColor = "#bdae93";
+            activeColor = "#458588";
+          };
+          status = {
+            newColor = "#b8bb26";
+            modifyColor = "#fabd2f";
+            addColor = "#b8bb26";
+            errorColor = "#fb4934";
+            highlightcolor = "#458588";
+            killColor = "#fb4934";
+            completedColor = "#928374";
+          };
+          title = {
+            fgColor = "#ebdbb2";
+            bgColor = "#282828";
+            highlightColor = "#458588";
+            counterColor = "#bdae93";
+            filterColor = "#928374";
+          };
+        };
+        views = {
+          table = {
+            fgColor = "#ebdbb2";
+            bgColor = "#282828";
+            cursorColor = "#458588";
+            header = {
+              fgColor = "#ebdbb2";
+              bgColor = "#282828";
+              sorterColor = "#fabd2f";
+            };
+          };
+          yaml = {
+            keyColor = "#bdae93";
+            colonColor = "#ebdbb2";
+            valueColor = "#83a598";
+          };
+          logs = {
+            fgColor = "#ebdbb2";
+            bgColor = "#282828";
+          };
+        };
+      };
+    };
+	};
+
   starship = (import ./programs/starship) { inherit pkgs; };
 	alacritty = (import ./programs/alacritty) { inherit pkgs; };
 	tmux = (import ./programs/tmux) { inherit pkgs; };
 	zellij = (import ./programs/zellij) { inherit pkgs; };
 	wezterm = (import ./programs/wezterm) { inherit pkgs; };
 }
+
+
+# Default K9s Skin
+# k9s:
+#   # General K9s styles
+#   body:
+#     fgColor: dodgerblue
+#     bgColor: '#ffffff'
+#     logoColor: '#0000ff'
+
+#   # ClusterInfoView styles
+#   info:
+#     fgColor: lightskyblue
+#     sectionColor: steelblue
+
+#   # Frame styles
+#   frame:
+#     # Borders styles
+#     border:
+#       fgColor: dodgerblue
+#       focusColor: aliceblue
+
+#     # MenuView attributes and styles
+#     menu:
+#       fgColor: darkblue
+#       keyColor: cornflowerblue
+#       # Used for favorite namespaces
+#       numKeyColor: cadetblue
+
+#     # CrumbView attributes for history navigation.
+#     crumbs:
+#       fgColor: white
+#       bgColor: steelblue
+#       activeColor: skyblue
+
+#     # Resource status and update styles
+#     status:
+#       newColor: '#00ff00'
+#       modifyColor: powderblue
+#       addColor: lightskyblue
+#       errorColor: indianred
+#       highlightcolor: royalblue
+#       killColor: slategray
+#       completedColor: gray
+
+#     # Border title styles.
+#     title:
+#       fgColor: aqua
+#       bgColor: white
+#       highlightColor: skyblue
+#       counterColor: slateblue
+#       filterColor: slategray
+#   # Specific views styles
+#   views:
+#     # TableView attributes.
+#     table:
+#       fgColor: blue
+#       bgColor: darkblue
+#       cursorColor: aqua
+#       # Header row styles.
+#       header:
+#         fgColor: white
+#         bgColor: darkblue
+#         sorterColor: orange
+
+#     # YAML info styles.
+#     yaml:
+#       keyColor: steelblue
+#       colonColor: blue
+#       valueColor: royalblue
+
+#     # Logs styles.
+#     logs:
+#       fgColor: white
+#       bgColor: black
