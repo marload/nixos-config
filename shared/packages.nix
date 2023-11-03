@@ -22,6 +22,7 @@ with pkgs; [
   nixpkgs-fmt
 	httpie
   fish
+	atuin
 
   # Cloud-related tools and SDKs
   lazydocker
