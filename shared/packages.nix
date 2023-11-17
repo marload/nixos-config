@@ -58,6 +58,7 @@ with pkgs; [
   tmux
   unzip
   jq
+  yq
   tree
   bat
   eza
