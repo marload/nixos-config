@@ -69,11 +69,6 @@ with pkgs; [
   # Programming languages
   python312
   python39Packages.virtualenv
-  nodejs
-  nodePackages.live-server
-  nodePackages.nodemon
-  nodePackages.prettier
-  nodePackages.npm
   go
   yarn
   rustup
