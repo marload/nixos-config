@@ -37,7 +37,7 @@ in
     casks = pkgs.callPackage ./casks.nix { };
     brews = [
       "tfenv"
-			"node"
+			"node@18"
     ];
     masApps = {
       "yoink" = 457622435;
