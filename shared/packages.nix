@@ -55,7 +55,6 @@ with pkgs; [
 
   # Text and terminal utilities
   htop
-  tmux
   unzip
   jq
   yq

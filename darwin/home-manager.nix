@@ -35,10 +35,7 @@ in
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix { };
-    brews = [
-      "tfenv"
-			"node@18"
-    ];
+    brews = pkgs.callPackage ./packages.nix { };
     masApps = {
       "yoink" = 457622435;
       "kakaotalk" = 869223134;
