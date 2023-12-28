@@ -43,9 +43,8 @@ in
       export PATH=$HOME/.local/share/bin:$PATH
       export EDITOR=nvim
 
-      set -o vi
-      bindkey -M viins jk vi-cmd-mode
       eval "$(starship init zsh)"
+      source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
     '';
   };
 
@@ -169,7 +168,6 @@ in
 	};
 
   starship = (import ./programs/starship) { inherit pkgs; };
-	zellij = (import ./programs/zellij) { inherit pkgs; };
 	wezterm = (import ./programs/wezterm) { inherit pkgs; };
 }
 

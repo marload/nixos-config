@@ -17,6 +17,9 @@
   "raycast"
   "1password"
 
+  # Utility Tools 
+  "hammerspoon"
+
   # Web browser
   "arc"
 ]

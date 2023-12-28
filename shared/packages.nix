@@ -23,6 +23,8 @@ with pkgs; [
 	httpie
   fish
 	atuin
+  zsh-vi-mode
+  tmuxinator
 
   # Cloud-related tools and SDKs
   lazydocker

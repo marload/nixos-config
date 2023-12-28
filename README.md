@@ -1,9 +1,14 @@
+# nixos-config
+
+
+## installation 
+
 ```bash
 sudo mv /etc/nix/nix.conf /etc/nix/nix.conf.before-nix-darwin
 chmod +x bin/build.sh && bin/build.sh
 ```
 
-# Set yabai
+## set yabai
 
 ```bash
 # create a new file for writing - visudo uses the vim editor by default.
@@ -34,3 +39,8 @@ run below command then reboot
 ```bash
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
+```
+
+### set hammerspoon
+
+activate manual
