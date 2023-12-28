@@ -45,6 +45,17 @@ in
 
       eval "$(starship init zsh)"
       source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
+
+			if [ $SHLVL -eq 1 ]; then;
+      	SESSIONS=("config" "personal" "work")
+				for SESSION in ''${SESSIONS[@]}
+				do
+					tmuxinator start $SESSION
+				done
+				tmux attach -t config
+			fi
+
     '';
   };
 
@@ -169,5 +180,6 @@ in
 
   starship = (import ./programs/starship) { inherit pkgs; };
 	wezterm = (import ./programs/wezterm) { inherit pkgs; };
+  alacritty = (import ./programs/alacritty { inherit pkgs; });
 }
 

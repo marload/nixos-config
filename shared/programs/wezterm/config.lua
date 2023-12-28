@@ -10,5 +10,5 @@ return {
 	window_close_confirmation = "NeverPrompt",
 	window_decorations = "RESIZE",
 	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
-	default_prog = { "sh", "/Users/marload/.scripts/spawn.sh" },
+	-- default_prog = { "sh", "/Users/marload/.scripts/spawn.sh" },
 }
