@@ -5,13 +5,7 @@
   "homebrew/cask/docker"
   "insomnia"
   "ngrok"
-  "wireshark"
-  "openvpn-connect"
   "visual-studio-code"
-
-  # Communication Tools
-  "obsidian"
-	"anytype"
 
   # Productivity Tools
   "raycast"

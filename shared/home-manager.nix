@@ -36,6 +36,7 @@ in
       lzd = "lazydocker";
       clr = "clear";
       rebuild = "~/.config/nixos-config/bin/rebuild.sh";
+      gitroot = "cd $(git rev-parse --show-toplevel)";
     };
     initExtra = ''
       export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
