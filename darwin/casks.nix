@@ -13,6 +13,7 @@
 
   # Utility Tools 
   "hammerspoon"
+	"via"
 
   # Web browser
   "arc"
