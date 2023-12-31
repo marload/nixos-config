@@ -24,6 +24,7 @@ with pkgs; [
   fish
 	atuin
   zsh-vi-mode
+  tmux
   tmuxinator
 
   # Cloud-related tools and SDKs
