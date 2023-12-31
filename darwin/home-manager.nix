@@ -24,6 +24,7 @@ in
   system = {
     keyboard = {
       enableKeyMapping = true;
+      remapCapsLockToControl = true; 
     };
     defaults = {
       dock = {
