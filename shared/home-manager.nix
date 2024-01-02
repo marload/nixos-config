@@ -54,7 +54,7 @@ in
 				do
 					tmuxinator start $SESSION
 				done
-				tmux attach -t config
+				tmux attach -t work
 			fi
 
     '';
