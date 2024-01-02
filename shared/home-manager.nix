@@ -49,7 +49,7 @@ in
 
 
 			if [ $SHLVL -eq 1 ]; then;
-      	SESSIONS=("config" "personal" "work")
+      	SESSIONS=("work" "personal" "config")
 				for SESSION in ''${SESSIONS[@]}
 				do
 					tmuxinator start $SESSION
