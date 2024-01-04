@@ -62,7 +62,7 @@ with pkgs; [
   htop
   unzip
   jq
-  yq
+  yq-go
   tree
   bat
   eza
