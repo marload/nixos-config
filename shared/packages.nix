@@ -26,6 +26,8 @@ with pkgs; [
   zsh-vi-mode
   tmux
   tmuxinator
+  libpqxx
+	stow
 
   # Cloud-related tools and SDKs
   lazydocker
