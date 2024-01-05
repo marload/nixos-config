@@ -27,15 +27,6 @@
     shift + cmd - up : yabai -m window --resize up:-50:0 && yabai -m window --resize down:-50:0
     shift + cmd - down : yabai -m window --resize up:-50:0 && yabai -m window --resize down:-50:0
 
-    # Focus Space
-    ctrl - 1 : yabai -m space --focus 1
-    ctrl - 2 : yabai -m space --focus 2
-    ctrl - 3 : yabai -m space --focus 3
-    ctrl - 4 : yabai -m space --focus 4
-    ctrl - 5 : yabai -m space --focus 5
-    #ctrl - left : yabai -m space --focus prev
-    #ctrl - right: yabai -m space --focus next
-
     # Send to Space
     shift + ctrl - 1 : yabai -m window --space 1
     shift + ctrl - 2 : yabai -m window --space 2

@@ -2,7 +2,7 @@
 
 [
   # Development Tools
-  "homebrew/cask/docker"
+  "orbstack"
   "insomnia"
   "ngrok"
   "visual-studio-code"
