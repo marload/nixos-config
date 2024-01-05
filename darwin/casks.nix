@@ -10,6 +10,7 @@
   # Productivity Tools
   "raycast"
   "1password"
+  "spacedrive"
 
   # Utility Tools 
   "hammerspoon"
