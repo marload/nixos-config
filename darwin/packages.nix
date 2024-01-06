@@ -2,5 +2,5 @@
 
 [
 	"tfenv"
-	"node@18"
+	"node"
 ]
