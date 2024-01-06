@@ -56,10 +56,7 @@ in
   local.dock.enable = true;
   local.dock.entries = [
     { path = "/Applications/Arc.app"; }
-    { path = "/Applications/Obsidian.app"; }
-    { path = "/Applications/KakaoTalk.app"; }
     { path = "/System/Applications/Music.app/"; }
-    { path = "/Applications/Visual Studio Code.app"; }
     {
       path = "${config.users.users.${user}.home}/Downloads";
       section = "others";
