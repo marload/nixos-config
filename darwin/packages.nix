@@ -3,5 +3,4 @@
 [
 	"tfenv"
 	"node"
-	"logseq"
 ]

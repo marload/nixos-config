@@ -11,6 +11,7 @@
   "raycast"
   "1password"
   "spacedrive"
+	"logseq"
 
   # Utility Tools 
   "hammerspoon"
