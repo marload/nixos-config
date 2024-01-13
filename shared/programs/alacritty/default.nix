@@ -4,6 +4,9 @@
 
 	settings = {
 		shell.program = "${pkgs.zsh}/bin/zsh";
+		env = {
+			TERM = "xterm-256color";
+		};
 		font = {
 			normal = {
 				family = "CaskaydiaCove Nerd Font";
