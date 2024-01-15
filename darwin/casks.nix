@@ -12,6 +12,7 @@
   "1password"
   "spacedrive"
 	"logseq"
+  "ridibooks"
 
   # Utility Tools 
   "hammerspoon"

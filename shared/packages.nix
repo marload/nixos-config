@@ -28,6 +28,7 @@ with pkgs; [
   tmuxinator
   libpqxx
 	stow
+  k6
 
   # Cloud-related tools and SDKs
   lazydocker
