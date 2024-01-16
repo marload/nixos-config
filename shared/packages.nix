@@ -24,7 +24,6 @@ with pkgs; [
   fish
 	atuin
   zsh-vi-mode
-  tmux
   tmuxinator
   libpqxx
 	stow
