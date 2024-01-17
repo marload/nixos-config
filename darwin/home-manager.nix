@@ -37,7 +37,6 @@ in
     casks = pkgs.callPackage ./casks.nix { };
     brews = pkgs.callPackage ./packages.nix { };
     masApps = {
-      "yoink" = 457622435;
       "kakaotalk" = 869223134;
     };
   };

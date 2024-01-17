@@ -28,7 +28,7 @@
       disabled = true;
     };
     memory_usage = {
-      disabled = false;
+      disabled = true;
       threshold = -1;
       format = "\\[$symbol[$ram_pct]($style)\\]";
       symbol = "󰍛 ";
@@ -46,6 +46,7 @@
       format = "\\[[$symbol($version)]($style)\\]";
     };
     cmd_duration = {
+      disabled = true;
       format = "\\[[⏱ $duration]($style)\\]";
     };
     cobol = {
