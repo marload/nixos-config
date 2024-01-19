@@ -180,7 +180,7 @@ in
 	};
 
   starship = (import ./programs/starship) { inherit pkgs; };
-	wezterm = (import ./programs/wezterm) { inherit pkgs; };
+	# wezterm = (import ./programs/wezterm) { inherit pkgs; };
   alacritty = (import ./programs/alacritty) { inherit pkgs; };
 }
 

@@ -12,5 +12,4 @@ return {
 	use_ime = true,
 	window_decorations = "RESIZE",
 	window_close_confirmation = "NeverPrompt"
-
 }

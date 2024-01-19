@@ -10,7 +10,7 @@
 		font = {
 			normal = {
 				family = "CaskaydiaCove Nerd Font";
-				style = "Regular";
+				style = "Light";
 			};
 			size = 12;
 		};
