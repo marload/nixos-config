@@ -13,7 +13,7 @@ in
     name = "${user}";
     home = "/Users/${user}";
     isHidden = false;
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 
   services = {
@@ -47,7 +47,7 @@ in
       home.enableNixpkgsReleaseCheck = false;
       home.packages = pkgs.callPackage ../shared/packages.nix { };
       programs = { } // import ../shared/home-manager.nix { inherit config pkgs lib; };
-      home.stateVersion = "21.11";
+      home.stateVersion = "24.05";
 	    manual.manpages.enable = false;
     };
   };

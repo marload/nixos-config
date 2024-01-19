@@ -3,7 +3,7 @@
 	enable = true;
 
 	settings = {
-		shell.program = "${pkgs.zsh}/bin/zsh";
+		shell.program = "${pkgs.fish}/bin/fish";
 		env = {
 			TERM = "xterm-256color";
 		};
@@ -21,12 +21,11 @@
 				y = 7;
 			};
 			decorations = "Buttonless";
-		};
-		dynamic_padding = true;
-		title = "Terminal";
-		class = {
-			instance = "Alacritty";
-			general = "Alacritty";
+			dynamic_padding = true;
+			class = {
+				instance = "Alacritty";
+				general = "Alacritty";
+			};
 		};
 		colors = {
 			primary = {

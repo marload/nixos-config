@@ -3,5 +3,5 @@
 [
 	"tfenv"
 	"node"
-	"tmux"
+	"azure-cli"
 ]

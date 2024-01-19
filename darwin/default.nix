@@ -17,7 +17,8 @@ in
 
   services.nix-daemon.enable = true;
 
-  programs.zsh.enable = true;
+  programs.zsh.enable = false;
+  programs.fish.enable = true;
 
   # Setup user, packages, programs
   nix = {

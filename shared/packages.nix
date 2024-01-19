@@ -39,7 +39,6 @@ with pkgs; [
   saml2aws
   kubectl
   kubectx
-  azure-cli
   google-cloud-sdk
   kubernetes-helm
   istioctl
@@ -71,8 +70,6 @@ with pkgs; [
   zoxide
 
   # Programming languages
-  python312
-  python39Packages.virtualenv
   go
   yarn
   rustup

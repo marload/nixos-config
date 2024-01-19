@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 return {
 	font = wezterm.font {
 		family = "CaskaydiaCove Nerd Font",
-		harfbuzz_features = {"calt=0", "clig=0", "liga=0"},
+		harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
 	},
 	font_size = 12.0,
 	color_scheme = "nord",
@@ -11,5 +11,6 @@ return {
 	warn_about_missing_glyphs = false,
 	use_ime = true,
 	window_decorations = "RESIZE",
-	window_close_confirmation = "NeverPrompt"
+	window_close_confirmation = "NeverPrompt",
+	default_prog = { "/Users/marload/.nix-profile/bin/fish" },
 }

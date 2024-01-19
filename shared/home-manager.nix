@@ -6,23 +6,39 @@ let
   email = "rladhkstn8@gmail.com";
 in
 {
-  zsh = {
+	fish = {
     enable = true;
-    autocd = false;
-    cdpath = [ "~/.local/share/src" ];
-    enableAutosuggestions = true;
-    syntaxHighlighting.enable = true;
+		shellInit = ''
+      fenv source '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+    '';	
+    interactiveShellInit = lib.strings.concatStrings (lib.strings.intersperse "\n" ([
+      (builtins.readFile ../files/config.fish)
+      "set -g SHELL ${pkgs.fish}/bin/fish"
+    ]));
+    plugins = [
+      {
+        name = "plugin-foreign-env";
+        src = pkgs.fetchFromGitHub {
+          owner = "oh-my-fish";
+          repo = "plugin-foreign-env";
+          rev = "dddd9213272a0ab848d474d0cbde12ad034e65bc";
+          sha256 = "00xqlyl3lffc5l0viin1nyp819wf81fncqyz87jx8ljjdhilmgbs";
+        };
+      }
+    ];
     shellAliases = {
       # Alias git
-      g = "git";
-      gs = "git status";
       ga = "git add";
       gc = "git commit";
-      gcm = "git commit -m";
+      gco = "git checkout";
+      gcp = "git cherry-pick";
+      gdiff = "git diff";
+      gl = "git prettylog";
       gp = "git push";
       gpl = "git pull";
-      gco = "git checkout";
-      gcb = "git checkout -b";
+      gs = "git status";
+      gt = "git tag";
+      gitroot = "cd $(git rev-parse --show-toplevel)";
 
       # Alias nvim
       v = "nvim";
@@ -32,33 +48,15 @@ in
       # ETC
       tf = "terraform";
       k = "kubectl";
-      kd = "kdash";
-      lzd = "lazydocker";
       clr = "clear";
       rebuild = "~/.config/nixos-config/bin/rebuild.sh";
-      gitroot = "cd $(git rev-parse --show-toplevel)";
     };
-    initExtra = ''
-      export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/:$PATH"
-      export PATH=/opt/homebrew/bin:$PATH
-      export PATH=$HOME/.local/share/bin:$PATH
-      export EDITOR=nvim
-
-      eval "$(starship init zsh)"
-      source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
-
-			if [ $SHLVL -eq 1 ]; then;
-      	SESSIONS=("work" "personal" "config")
-				for SESSION in ''${SESSIONS[@]}
-				do
-					tmuxinator start $SESSION
-				done
-				tmux attach -t work
-			fi
-
-    '';
   };
+
+  tmux = {
+		enable = true;
+		historyLimit = 10000;
+	};
 
   git = {
     enable = true;
@@ -102,10 +100,6 @@ in
   lsd = {
     enable = true;
     enableAliases = true;
-  };
-
-  carapace = {
-    enable = true;
   };
 
 	k9s = {
@@ -180,7 +174,7 @@ in
 	};
 
   starship = (import ./programs/starship) { inherit pkgs; };
-	# wezterm = (import ./programs/wezterm) { inherit pkgs; };
+	wezterm = (import ./programs/wezterm) { inherit pkgs; };
   alacritty = (import ./programs/alacritty) { inherit pkgs; };
 }
 
