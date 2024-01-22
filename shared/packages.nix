@@ -53,6 +53,7 @@ with pkgs; [
   ffmpeg
   fd
   meslo-lgs-nf
+	anki-bin
 
   # Source code management, Git, GitHub tools
   gh
