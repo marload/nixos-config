@@ -13,6 +13,7 @@
   "spacedrive"
 	"logseq"
   "ridibooks"
+	"remnote"
 
   # Utility Tools 
   "hammerspoon"
