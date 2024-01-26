@@ -12,9 +12,11 @@ in
       set -g @plugin 'tmux-plugins/tpm'
       set -g @plugin 'tmux-plugins/tmux-sensible'
 
-      set -g @plugin "arcticicestudio/nord-tmux"
       set -g @plugin 'christoomey/vim-tmux-navigator'
       set -g @plugin 'schasse/tmux-jump'
+			set -g @plugin 'fabioluciano/tmux-tokyo-night'
+
+      set-option -g default-shell ${pkgs.fish}/bin/fish
 
       bind-key -T copy-mode-vi v send-keys -X begin-selection
       bind-key -T copy-mode-vi y send-keys -X copy-selection
