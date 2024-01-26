@@ -15,9 +15,9 @@ end
 set -g fish_greeting
 
 if test $SHLVL -eq 1
-    set SESSIONS work personal config
-    for SESSION in $SESSIONS
-        tmuxinator start $SESSION
-    end
+		tmuxinator start work
+		tmuxinator start personal
+		tmuxinator start config
     tmux attach -t work
 end
+

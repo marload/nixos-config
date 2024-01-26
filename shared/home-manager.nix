@@ -6,6 +6,25 @@ let
   email = "rladhkstn8@gmail.com";
 in
 {
+	tmux = {
+		enable = true;
+		extraConfig = ''
+      set -g @plugin 'tmux-plugins/tpm'
+      set -g @plugin 'tmux-plugins/tmux-sensible'
+
+      set -g @plugin "arcticicestudio/nord-tmux"
+      set -g @plugin 'christoomey/vim-tmux-navigator'
+      set -g @plugin 'schasse/tmux-jump'
+
+      bind-key -T copy-mode-vi v send-keys -X begin-selection
+      bind-key -T copy-mode-vi y send-keys -X copy-selection
+
+      set -g default-terminal "tmux-256color"
+      set -ag terminal-overrides ",xterm-256color:RGB"
+
+      run '~/.tmux/plugins/tpm/tpm'
+		'';
+	};
 	fish = {
     enable = true;
 		shellInit = ''
@@ -52,11 +71,6 @@ in
       rebuild = "~/.config/nixos-config/bin/rebuild.sh";
     };
   };
-
-  tmux = {
-		enable = true;
-		historyLimit = 10000;
-	};
 
   git = {
     enable = true;
