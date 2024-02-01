@@ -28,6 +28,7 @@ with pkgs; [
   libpqxx
 	stow
   k6
+  postgresql_15
 
   # Cloud-related tools and SDKs
   lazydocker
