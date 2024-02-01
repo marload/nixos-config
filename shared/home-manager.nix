@@ -14,7 +14,7 @@ in
 
       set -g @plugin 'christoomey/vim-tmux-navigator'
       set -g @plugin 'schasse/tmux-jump'
-			set -g @plugin 'fabioluciano/tmux-tokyo-night'
+      set -g @plugin 'odedlaz/tmux-onedark-theme'
 
       set-option -g default-shell ${pkgs.fish}/bin/fish
 
