@@ -14,6 +14,7 @@
 	"logseq"
   "ridibooks"
 	"remnote"
+	"todoist"
 
   # Utility Tools 
   "hammerspoon"
