@@ -38,6 +38,7 @@ in
     brews = pkgs.callPackage ./packages.nix { };
     masApps = {
       "kakaotalk" = 869223134;
+      "todoist" = 585829637;
     };
   };
 

@@ -11,10 +11,8 @@
   "raycast"
   "1password"
   "spacedrive"
-	"logseq"
   "ridibooks"
 	"remnote"
-	"todoist"
 
   # Utility Tools 
   "hammerspoon"
