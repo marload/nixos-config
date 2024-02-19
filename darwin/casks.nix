@@ -5,7 +5,6 @@
   "orbstack"
   "insomnia"
   "ngrok"
-  "visual-studio-code"
 
   # Productivity Tools
   "raycast"

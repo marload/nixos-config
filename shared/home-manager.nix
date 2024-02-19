@@ -192,5 +192,6 @@ in
   starship = (import ./programs/starship) { inherit pkgs; };
 	wezterm = (import ./programs/wezterm) { inherit pkgs; };
   alacritty = (import ./programs/alacritty) { inherit pkgs; };
+	vscode = (import ./programs/vscode) { inherit pkgs; };
 }
 
