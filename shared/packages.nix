@@ -29,6 +29,7 @@ with pkgs; [
 	stow
   k6
   postgresql_15
+	eks_node_viewer
 
   # Cloud-related tools and SDKs
   lazydocker
